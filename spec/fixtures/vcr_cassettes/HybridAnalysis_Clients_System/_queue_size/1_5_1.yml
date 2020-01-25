@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hybrid-analysis.com/api/v2/system/queue-size
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Falcon Sandbox
+      Host:
+      - www.hybrid-analysis.com
+      Api-Key:
+      - "<HYBRIDANALYSIS_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Jan 2020 23:53:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '11'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df4531868d5eb6e6ac64f81b5e627d1731579910024; expires=Sun, 23-Feb-20
+        23:53:44 GMT; path=/; domain=.hybrid-analysis.com; HttpOnly; SameSite=Lax;
+        Secure
+      Api-Limits:
+      - '{"limits":{"minute":200,"hour":2000},"used":{"minute":2,"hour":7},"limit_reached":false}'
+      Api-Version:
+      - 2.8.0
+      Webservice-Version:
+      - 8.8.4-a9bcd8626
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - 'default-src ''none''; connect-src ''self'' *.twitter.com; script-src ''self''
+        *.google.com *.gstatic.com *.google-analytics.com *.twitter.com *.twimg.com
+        cdn.inspectlet.com frontend.id-visitors.com ''unsafe-inline''; font-src ''self''
+        data: fonts.googleapis.com; child-src ''self'' data: *.google.com *.gstatic.com
+        *.twitter.com; img-src ''self'' data: *.gstatic.com *.google.com *.google-analytics.com
+        stats.g.doubleclick.net *.twitter.com *.twimg.com *.paypalobjects.com cartodb-basemaps-a.global.ssl.fastly.net
+        cartodb-basemaps-b.global.ssl.fastly.net cartodb-basemaps-c.global.ssl.fastly.net;
+        style-src ''self'' *.google.com *.twitter.com *.twimg.com ''unsafe-inline'';
+        object-src ''self''; frame-ancestors ''none'''
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55a5edb66801f8e3-NRT
+    body:
+      encoding: UTF-8
+      string: '{"value":6}'
+    http_version: 
+  recorded_at: Fri, 24 Jan 2020 23:53:44 GMT
+recorded_with: VCR 5.0.0

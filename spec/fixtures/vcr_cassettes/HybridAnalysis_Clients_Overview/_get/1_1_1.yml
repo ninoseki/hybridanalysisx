@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hybrid-analysis.com/api/v2/overview/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Falcon Sandbox
+      Host:
+      - www.hybrid-analysis.com
+      Api-Key:
+      - "<HYBRIDANALYSIS_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Jan 2020 23:53:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc0f96489f46eb833d5af25012eb958391579910027; expires=Sun, 23-Feb-20
+        23:53:47 GMT; path=/; domain=.hybrid-analysis.com; HttpOnly; SameSite=Lax;
+        Secure
+      Api-Limits:
+      - '{"limits":{"minute":200,"hour":2000},"used":{"minute":6,"hour":11},"limit_reached":false}'
+      Api-Version:
+      - 2.8.0
+      Webservice-Version:
+      - 8.8.4-a9bcd8626
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - 'default-src ''none''; connect-src ''self'' *.twitter.com; script-src ''self''
+        *.google.com *.gstatic.com *.google-analytics.com *.twitter.com *.twimg.com
+        cdn.inspectlet.com frontend.id-visitors.com ''unsafe-inline''; font-src ''self''
+        data: fonts.googleapis.com; child-src ''self'' data: *.google.com *.gstatic.com
+        *.twitter.com; img-src ''self'' data: *.gstatic.com *.google.com *.google-analytics.com
+        stats.g.doubleclick.net *.twitter.com *.twimg.com *.paypalobjects.com cartodb-basemaps-a.global.ssl.fastly.net
+        cartodb-basemaps-b.global.ssl.fastly.net cartodb-basemaps-c.global.ssl.fastly.net;
+        style-src ''self'' *.google.com *.twitter.com *.twimg.com ''unsafe-inline'';
+        object-src ''self''; frame-ancestors ''none'''
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55a5edc4be8d94e5-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sha256":"275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f","last_file_name":"notavirus.bat","other_file_name":["123.com","1234.exe","2019-02-28_11.57.26.806898","44d88612fea8a8f36de82e1278abb02f","617d1041e2f798790e14dace2a9c625772981448bf34cd098969c206800faa90.zip","Bhanu.txt","Cryptolocker.com","DADA.com","Dinocode.txt","EICAR","EICAR
+        Test.txt","EICAR test file.jpg","EICAR-Test-File","EICAR.com","Eicar.txt","EicarTestFile.txt","New
+        Text Document.txt","Novo Documento de Texto.txt","Salary.pdf","Teste.exe","Testvirus
+        - Copy.docx","Testvirus - Copy.txt","Testvirus.com","Virus.txt","antivirus.txt","asd.bat","ashish
+        virus.zip","command.com","daddyvirus.com","e.zipstaticCPCheckMerand1488451495889","e.zipstaticCPCheckMerand1507800315646","eicar","eicar
+        (1).com","eicar (2).com","eicar test file.txt","eicar.apk","eicar.com","eicar.com
+        (1).txt","eicar.com(1).txt","eicar.com.txt","eicar.com_1.txt","eicar.docx","eicar.exe","eicar.txt","eicar.zip","eicar_com.zip","eicarcom2
+        (1).zip","eicarcom2.zip","eicartestfile.txt","falla.txt","file","file1_zip.zip","file2.zip","foobar.txt","malicious_file.bat","malwaretestfile.txt","misic05_Scott_Test.txt","oPaHRpMo.txt","prad.zip","rad27D62.tmp","rad335DE.tmp","rad61800.tmp.com","readme1.md","sample","sample
+        virus.txt","sumit.txt","test-eicar.txt","test.txt","teste.exe","vir.txt","virus-safe.test","virus.exe","virus.scr","virus.txt","virusTestFile.docx","virus_sample.com","virustest.txt","vvvvvvvvvvvv.txt","yoloswag.zip","\u041d\u043e\u0432\u044b\u0439
+        \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u044b\u0439 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442
+        (2).com","\u041f\u0440\u0438\u0432\u0435\u0442.com","\u0432\u0438\u0440\u0443\u0441.txt"],"threat_score":100,"verdict":"malicious","url_analysis":false,"size":68,"type":"EICAR
+        virus test files","type_short":["com","executable"],"analysis_start_time":"2019-10-18T09:16:09+00:00","last_multi_scan":"2020-01-20T10:16:58+00:00","tags":[],"architecture":"WINDOWS","multiscan_result":96,"scanners":[{"name":"VirusTotal","status":"malicious","progress":100,"total":64,"positives":62,"percent":96,"anti_virus_results":[]},{"name":"Metadefender","status":"malicious","progress":100,"total":26,"positives":25,"percent":96,"anti_virus_results":[{"name":"AegisLab","result":true,"threat_found":"Test.File.EICAR.00x7"},{"name":"Ahnlab","result":true,"threat_found":"Virus\/EICAR_Test_File"},{"name":"Antiy","result":true,"threat_found":"TestFile\/Win32.EICAR"},{"name":"Avira","result":true,"threat_found":"Eicar-Test-Signature"},{"name":"BitDefender","result":true,"threat_found":"EICAR-Test-File
+        (not a virus)"},{"name":"ByteHero","result":false,"threat_found":null},{"name":"ClamAV","result":true,"threat_found":"Eicar-Test-Signature"},{"name":"Cyren","result":true,"threat_found":"EICAR_Test_File"},{"name":"ESET","result":true,"threat_found":"Eicar
+        test file"},{"name":"Emsisoft","result":true,"threat_found":"EICAR-Test-File
+        (not a virus) (B)"},{"name":"Huorong","result":true,"threat_found":"TEST\/AVEngTestFile!EICAR"},{"name":"Ikarus","result":true,"threat_found":"EICAR-Test-File"},{"name":"K7","result":true,"threat_found":"EICAR_Test_File"},{"name":"Kaspersky","result":true,"threat_found":"EICAR-Test-File"},{"name":"McAfee","result":true,"threat_found":"EICAR
+        test file"},{"name":"NANOAV","result":true,"threat_found":"Marker.Dos.EICAR-Test-File.dyb"},{"name":"Quick
+        Heal","result":true,"threat_found":"EICAR.TestFile"},{"name":"Sophos","result":true,"threat_found":"EICAR-AV-Test"},{"name":"Symantec","result":true,"threat_found":"EICAR
+        Test String"},{"name":"TACHYON","result":true,"threat_found":"EICAR-Test-File"},{"name":"Total
+        Defense","result":true,"threat_found":"the EICAR test string"},{"name":"TrendMicro","result":true,"threat_found":"Eicar_test_file"},{"name":"TrendMicro
+        House Call","result":true,"threat_found":"Eicar_test_file"},{"name":"Vir.IT
+        eXplorer","result":true,"threat_found":"EICAR-Test-File"},{"name":"VirusBlokAda","result":true,"threat_found":"EICAR-Test-File"},{"name":"Xvirus
+        Personal Guard","result":true,"threat_found":null}]},{"name":"CrowdStrike
+        Falcon Static Analysis (ML)","status":"no-result","progress":100,"total":null,"positives":null,"percent":null,"anti_virus_results":[]}],"submit_context":["http:\/\/www.eicar.org\/download\/eicarcom2.zip"],"reports":["5732d6d70d61b030c4b147f5","5b0520747ca3e12421269514","5c4846717ca3e155c63bdedc","55a67a340e316d67317fce0a","5600266b0e316dd84aa9a6d5","56e81fefaac2eda14efa84d3","5a5da5076e3579ce99a80666","5aa3aef07ca3e17732738446","5ae0bd3b7ca3e167e120c81c"],"related_parent_hashes":["2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","e21378cda53f31781595f7397a4b9616fdf64ed3f8b7a353846c3ae137148cd2","e1105070ba828007508566e28a2b8d4c65d192e9eaf3b7868382b7cae747b397","26fd8a2df651fd8227db511464778030ff405428ee0a3f3d22aae1f27e81c0cd","a766dd89fa488ec16e1ab781c3b5cf353b01134f5105ca8ed474eb323c7d273d"],"related_children_hashes":[],"whitelisted":false,"children_in_queue":0,"children_in_progress":0,"related_reports":[{"job_id":"5715016caac2ed21657b23c7","environment_id":1,"state":"ERROR","error_type":"FILE_TYPE_BAD_ERROR","error_origin":"CLIENT","sha256":"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","verdict":null},{"job_id":"5732d6d80d61b030c4b147f6","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","verdict":"no
+        verdict"},{"job_id":"5a65f6226e3579ce99a80b51","environment_id":120,"state":"ERROR","error_type":"FILE_TYPE_BAD_ERROR","error_origin":"CLIENT","sha256":"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","verdict":null},{"job_id":"5b36791a9ac508f90ba0f8c7","environment_id":300,"state":"ERROR","error_type":"FILE_TYPE_BAD_ERROR","error_origin":"CLIENT","sha256":"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","verdict":null},{"job_id":"5715016caac2ed21657b23c9","environment_id":4,"state":"ERROR","error_type":"FILE_TYPE_BAD_ERROR","error_origin":"CLIENT","sha256":"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad","verdict":null},{"job_id":"57fead73aac2ed41797b80c1","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"26fd8a2df651fd8227db511464778030ff405428ee0a3f3d22aae1f27e81c0cd","verdict":"no
+        verdict"},{"job_id":"58f6413caac2ed0933110d9f","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"617d1041e2f798790e14dace2a9c625772981448bf34cd098969c206800faa90","verdict":"no
+        verdict"},{"job_id":"5afdb2bb7ca3e1205b4f0c50","environment_id":120,"state":"IN_QUEUE","error_type":null,"error_origin":null,"sha256":"617d1041e2f798790e14dace2a9c625772981448bf34cd098969c206800faa90","verdict":null},{"job_id":"5b3679137ca3e157a21eeaa9","environment_id":300,"state":"IN_QUEUE","error_type":null,"error_origin":null,"sha256":"617d1041e2f798790e14dace2a9c625772981448bf34cd098969c206800faa90","verdict":null},{"job_id":"5a82894c7ca3e13c57398ee4","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"a766dd89fa488ec16e1ab781c3b5cf353b01134f5105ca8ed474eb323c7d273d","verdict":"no
+        verdict"},{"job_id":"5767456caac2ed5548ba97f9","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"e1105070ba828007508566e28a2b8d4c65d192e9eaf3b7868382b7cae747b397","verdict":"no
+        verdict"},{"job_id":"5732d6c0aac2edbc787b23c7","environment_id":100,"state":"SUCCESS","error_type":null,"error_origin":null,"sha256":"e21378cda53f31781595f7397a4b9616fdf64ed3f8b7a353846c3ae137148cd2","verdict":"no
+        verdict"}]}'
+    http_version: 
+  recorded_at: Fri, 24 Jan 2020 23:53:47 GMT
+recorded_with: VCR 5.0.0

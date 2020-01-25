@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hybrid-analysis.com/api/v2/overview/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f/refresh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Falcon Sandbox
+      Host:
+      - www.hybrid-analysis.com
+      Api-Key:
+      - "<HYBRIDANALYSIS_API_KEY>"
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Fri, 24 Jan 2020 23:55:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d944b5f9d363f499f6e1187fcc4c974e31579910120; expires=Sun, 23-Feb-20
+        23:55:20 GMT; path=/; domain=.hybrid-analysis.com; HttpOnly; SameSite=Lax;
+        Secure
+      Api-Limits:
+      - '{"limits":{"minute":200,"hour":2000},"used":{"minute":2,"hour":13},"limit_reached":false}'
+      Api-Version:
+      - 2.8.0
+      Webservice-Version:
+      - 8.8.4-a9bcd8626
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - 'default-src ''none''; connect-src ''self'' *.twitter.com; script-src ''self''
+        *.google.com *.gstatic.com *.google-analytics.com *.twitter.com *.twimg.com
+        cdn.inspectlet.com frontend.id-visitors.com ''unsafe-inline''; font-src ''self''
+        data: fonts.googleapis.com; child-src ''self'' data: *.google.com *.gstatic.com
+        *.twitter.com; img-src ''self'' data: *.gstatic.com *.google.com *.google-analytics.com
+        stats.g.doubleclick.net *.twitter.com *.twimg.com *.paypalobjects.com cartodb-basemaps-a.global.ssl.fastly.net
+        cartodb-basemaps-b.global.ssl.fastly.net cartodb-basemaps-c.global.ssl.fastly.net;
+        style-src ''self'' *.google.com *.twitter.com *.twimg.com ''unsafe-inline'';
+        object-src ''self''; frame-ancestors ''none'''
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55a5f00edb5b948b-NRT
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 24 Jan 2020 23:55:21 GMT
+recorded_with: VCR 5.0.0
