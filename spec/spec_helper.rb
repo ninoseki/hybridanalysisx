@@ -26,6 +26,9 @@ RSpec.configure do |config|
   end
 end
 
+ENV["HA_API_KEY"] = "foo" unless ENV.key?("HA_API_KEY")
+ENV["HYBRIDANALYSIS_API_KEY"] = "foo" unless ENV.key?("HYBRIDANALYSIS_API_KEY")
+
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
