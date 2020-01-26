@@ -100,7 +100,7 @@ module HybridAnalysis
 
       def stringfy_keys(hash)
         hash.map do |k, v|
-          [k.to_s, v]
+          [k.to_s, v.to_s]
         end
       end
 

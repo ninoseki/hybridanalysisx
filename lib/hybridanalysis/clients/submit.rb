@@ -33,7 +33,7 @@ module HybridAnalysis
         name = File.basename(file)
         data = File.read(file)
         params = {
-          environment_id: environment_id.to_s,
+          environment_id: environment_id,
           no_share_third_party: no_share_third_party,
           allow_community_access: allow_community_access,
           no_hash_lookup: no_hash_lookup,
@@ -137,7 +137,28 @@ module HybridAnalysis
       # @return [Hash]
       #
       def url_to_file(url:, environment_id:, no_share_third_party: nil, allow_community_access: nil, no_hash_lookup: nil, action_script: nil, hybrid_analysis: nil, experimental_anti_evasion: nil, script_logging: nil, input_sample_tampering: nil, tor_enabled_analysis: nil, offline_analysis: nil, email: nil, comment: nil, custom_date_time: nil, custom_cmd_line: nil, custom_run_time: nil, submit_name: nil, document_password: nil, environment_variable: nil)
-        params = { url: url, environment_id: environment_id, no_share_third_party: no_share_third_party, allow_community_access: allow_community_access, no_hash_lookup: no_hash_lookup, action_script: action_script, hybrid_analysis: hybrid_analysis, experimental_anti_evasion: experimental_anti_evasion, script_logging: script_logging, input_sample_tampering: input_sample_tampering, tor_enabled_analysis: tor_enabled_analysis, offline_analysis: offline_analysis, email: email, comment: comment, custom_date_time: custom_date_time, custom_cmd_line: custom_cmd_line, custom_run_time: custom_run_time, submit_name: submit_name, document_password: document_password, environment_variable: environment_variable }.compact
+        params = {
+          url: url,
+          environment_id: environment_id,
+          no_share_third_party: no_share_third_party,
+          allow_community_access: allow_community_access,
+          no_hash_lookup: no_hash_lookup,
+          action_script: action_script,
+          hybrid_analysis: hybrid_analysis,
+          experimental_anti_evasion: experimental_anti_evasion,
+          script_logging: script_logging,
+          input_sample_tampering: input_sample_tampering,
+          tor_enabled_analysis: tor_enabled_analysis,
+          offline_analysis: offline_analysis,
+          email: email,
+          comment: comment,
+          custom_date_time: custom_date_time,
+          custom_cmd_line: custom_cmd_line,
+          custom_run_time: custom_run_time,
+          submit_name: submit_name,
+          document_password: document_password,
+          environment_variable: environment_variable
+        }.compact
         _post("/submit/url-to-file", params) { |json| json }
       end
 
@@ -165,7 +186,25 @@ module HybridAnalysis
       # @return [Hash]
       #
       def url_for_analysis(url:, environment_id:, no_share_third_party: nil, no_hash_lookup: nil, action_script: nil, hybrid_analysis: nil, experimental_anti_evasion: nil, script_logging: nil, input_sample_tampering: nil, tor_enabled_analysis: nil, offline_analysis: nil, email: nil, comment: nil, custom_date_time: nil, custom_cmd_line: nil, custom_run_time: nil, environment_variable: nil)
-        params = { url: url, environment_id: environment_id, no_share_third_party: no_share_third_party, no_hash_lookup: no_hash_lookup, action_script: action_script, hybrid_analysis: hybrid_analysis, experimental_anti_evasion: experimental_anti_evasion, script_logging: script_logging, input_sample_tampering: input_sample_tampering, tor_enabled_analysis: tor_enabled_analysis, offline_analysis: offline_analysis, email: email, comment: comment, custom_date_time: custom_date_time, custom_cmd_line: custom_cmd_line, custom_run_time: custom_run_time, environment_variable: environment_variable }.compact
+        params = {
+          url: url,
+          environment_id: environment_id,
+          no_share_third_party: no_share_third_party,
+          no_hash_lookup: no_hash_lookup,
+          action_script: action_script,
+          hybrid_analysis: hybrid_analysis,
+          experimental_anti_evasion: experimental_anti_evasion,
+          script_logging: script_logging,
+          input_sample_tampering: input_sample_tampering,
+          tor_enabled_analysis: tor_enabled_analysis,
+          offline_analysis: offline_analysis,
+          email: email,
+          comment: comment,
+          custom_date_time: custom_date_time,
+          custom_cmd_line: custom_cmd_line,
+          custom_run_time: custom_run_time,
+          environment_variable: environment_variable
+        }.compact
         _post("/submit/url-for-analysis", params) { |json| json }
       end
 

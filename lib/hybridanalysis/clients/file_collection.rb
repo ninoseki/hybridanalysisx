@@ -46,7 +46,10 @@ module HybridAnalysis
       # @return [Hash]
       #
       def search(collection_name: nil, tag: nil)
-        params = { collection_name: collection_name, tag: tag }.compact
+        params = {
+          collection_name: collection_name,
+          tag: tag
+        }.compact
         _post("/file-collection/search", params) { |json| json }
       end
 
@@ -61,7 +64,12 @@ module HybridAnalysis
       # @return [Hash]
       #
       def create(collection_name: nil, comment: nil, no_share_third_party: nil, allow_community_access: nil)
-        params = { collection_name: collection_name, comment: comment, no_share_third_party: no_share_third_party, allow_community_access: allow_community_access }.compact
+        params = {
+          collection_name: collection_name,
+          comment: comment,
+          no_share_third_party: no_share_third_party,
+          allow_community_access: allow_community_access
+        }.compact
         _post("/file-collection/create", params) { |json| json }
       end
 
