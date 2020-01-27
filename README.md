@@ -18,8 +18,10 @@ gem install hybridanalysisx
 ```ruby
 require "hybridanalysis"
 
-# when given nothing, it tries to load your usernamem & API key via ENV["HA_API_KEY"] or ENV["HYBRIDANALYSIS_API_KEY"]
+# when given nothing, it tries to load your API key via ENV["HA_API_KEY"] or ENV["HYBRIDANALYSIS_API_KEY"]
 api = HybridAnalysis::API.new
+# or you can set it manually
+api = HybridAnalysis::API.new(key: "YOUR_API_KEY")
 
 api.feed.latest
 api.quick_scan(file: "/tmp/foo.exe", scan_type: "all")
